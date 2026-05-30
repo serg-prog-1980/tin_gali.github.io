@@ -68,11 +68,11 @@ nav.scrolled {
 .nav-links { display: flex; gap: 2.5rem; list-style: none; align-items: center; }
 .nav-links a {
   font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase;
-  color: var(--ink); text-decoration: none; position: relative; transition: color 0.25s;
+  color: var(--cream); mix-blend-mode: difference; text-decoration: none; position: relative; transition: color 0.25s; z-index: 101;
 }
 .nav-links a::after {
   content: ''; position: absolute; bottom: -3px; left: 0;
-  width: 0; height: 0.5px; background: var(--ochre); transition: width 0.3s var(--ease-out);
+  width: 100%; height: 0.5px; background: var(--ochre); transition: width 0.3s var(--ease-out);
 }
 .nav-links a:hover { color: var(--ochre); }
 .nav-links a:hover::after { width: 100%; }
